@@ -1,0 +1,82 @@
+﻿@model CS4790IA3.Models.Registration
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Registration</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Suffix)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Suffix)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Anonymous)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Anonymous)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Phone)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Phone)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EmergencyContact)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EmergencyContact)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ContactsPhone)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ContactsPhone)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AdultRunners)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AdultRunners)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ChildRunners)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ChildRunners)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
